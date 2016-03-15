@@ -46,6 +46,19 @@ class MoneyTests: XCTestCase {
         
     }
     
+    func testPlusEquals() {
+        let tenDollars = Money(amount: 10.0)
+        let amounts = [ tenDollars, tenDollars, tenDollars ]
+        var totalAmount = Money(amount: 0.0)
+        for amount in amounts {
+            totalAmount = totalAmount + amount
+        }
+        
+        print("total amount: \(totalAmount)")
+        XCTAssertTrue(totalAmount==Money(amount: 30.0))
+        
+    }
+    
     func testMultiplyingMoney() {
         let unitAmount = Money(amount: 5.0)
         let totalAmount = unitAmount * 10

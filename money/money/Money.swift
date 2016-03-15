@@ -75,6 +75,10 @@ public func +(lhs:Money, rhs:Double) -> Money {
     return Money(amount: lhs.amount + rhs, currency: lhs.currency)
 }
 
+public func +(lhs:Money, rhs:Money) -> Money {
+    return Money(amount: lhs.amount + rhs.amount)
+}
+
 public func >(lhs:Money, rhs:Money) -> Bool {
     return lhs.amount > rhs.amount
 }
