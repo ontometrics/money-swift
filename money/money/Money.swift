@@ -50,7 +50,7 @@ protocol Exchangeable {
     var currency:Currency { get }
 }
 
-struct Money : Exchangeable {
+public struct Money : Exchangeable {
     let amount:Double
     let currency:Currency
     var description:String {
