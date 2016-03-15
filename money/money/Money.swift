@@ -83,6 +83,10 @@ public func <(lhs:Money, rhs:Money) -> Bool {
     return lhs.amount < rhs.amount
 }
 
+public func *(lhs:Money, rhs:Double) -> Money {
+    return Money(amount: lhs.amount * rhs)
+}
+
 /*
 enum MoneyParseError : ErrorType {
     case UnknownCurrency

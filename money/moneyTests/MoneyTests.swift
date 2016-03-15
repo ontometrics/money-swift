@@ -46,6 +46,13 @@ class MoneyTests: XCTestCase {
         
     }
     
+    func testMultiplyingMoney() {
+        let unitAmount = Money(amount: 5.0)
+        let totalAmount = unitAmount * 10
+        
+        XCTAssertTrue(Money(amount: 50.00)==totalAmount)
+    }
+    
     func testComparisons() {
         let cheap = Money(amount: 5.25, currency: .USD)
         let expensive = Money(amount: 6.25, currency: .USD)
