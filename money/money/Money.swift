@@ -13,7 +13,7 @@ protocol ExchangeBasis {
     var symbol:String { get }
 }
 
-enum Currency : ExchangeBasis, Equatable {
+public enum Currency : ExchangeBasis, Equatable {
     case USD
     
     static let allValues = [ USD ]
@@ -39,7 +39,7 @@ enum Currency : ExchangeBasis, Equatable {
     
 }
 
-func ==(lhs:Currency, rhs:Currency) -> Bool {
+public func ==(lhs:Currency, rhs:Currency) -> Bool {
     return lhs.symbol==rhs.symbol
 }
 
@@ -60,26 +60,26 @@ public class Money : NSObject, Exchangeable {
         }
     }
     
-    init(amount:Double, currency:Currency = defaultCurrency){
+    public init(amount:Double, currency:Currency = defaultCurrency){
         self.amount = amount
         self.currency = currency
     }
     
 }
 
-func ==(lhs:Money, rhs:Money) -> Bool {
+public func ==(lhs:Money, rhs:Money) -> Bool {
     return lhs.currency==rhs.currency && lhs.amount==rhs.amount
 }
 
-func +(lhs:Money, rhs:Double) -> Money {
+public func +(lhs:Money, rhs:Double) -> Money {
     return Money(amount: lhs.amount + rhs, currency: lhs.currency)
 }
 
-func >(lhs:Money, rhs:Money) -> Bool {
+public func >(lhs:Money, rhs:Money) -> Bool {
     return lhs.amount > rhs.amount
 }
 
-func <(lhs:Money, rhs:Money) -> Bool {
+public func <(lhs:Money, rhs:Money) -> Bool {
     return lhs.amount < rhs.amount
 }
 
