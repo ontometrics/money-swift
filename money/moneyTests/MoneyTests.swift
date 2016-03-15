@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import money
+@testable import Money
 
 class MoneyTests: XCTestCase {
 

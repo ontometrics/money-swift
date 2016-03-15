@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0263C2FA1C986F8F00581D82 /* money.h in Headers */ = {isa = PBXBuildFile; fileRef = 0263C2F91C986F8F00581D82 /* money.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0263C3011C986F8F00581D82 /* money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0263C2F61C986F8F00581D82 /* money.framework */; };
+		0263C3011C986F8F00581D82 /* Money.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0263C2F61C986F8F00581D82 /* Money.framework */; };
 		0263C3111C986FA800581D82 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263C3101C986FA800581D82 /* Money.swift */; };
 		0263C3141C98703C00581D82 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0263C3131C98703C00581D82 /* MoneyTests.swift */; };
 /* End PBXBuildFile section */
@@ -24,10 +24,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0263C2F61C986F8F00581D82 /* money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0263C2F61C986F8F00581D82 /* Money.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Money.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0263C2F91C986F8F00581D82 /* money.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = money.h; sourceTree = "<group>"; };
 		0263C2FB1C986F8F00581D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0263C3001C986F8F00581D82 /* moneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0263C3001C986F8F00581D82 /* Money.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Money.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0263C3071C986F8F00581D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0263C3101C986FA800581D82 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		0263C3121C98703B00581D82 /* moneyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "moneyTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0263C3011C986F8F00581D82 /* money.framework in Frameworks */,
+				0263C3011C986F8F00581D82 /* Money.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +56,8 @@
 		0263C2EC1C986F8F00581D82 = {
 			isa = PBXGroup;
 			children = (
-				0263C2F81C986F8F00581D82 /* money */,
-				0263C3041C986F8F00581D82 /* moneyTests */,
+				0263C2F81C986F8F00581D82 /* Money */,
+				0263C3041C986F8F00581D82 /* MoneyTests */,
 				0263C2F71C986F8F00581D82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,29 +65,31 @@
 		0263C2F71C986F8F00581D82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0263C2F61C986F8F00581D82 /* money.framework */,
-				0263C3001C986F8F00581D82 /* moneyTests.xctest */,
+				0263C2F61C986F8F00581D82 /* Money.framework */,
+				0263C3001C986F8F00581D82 /* Money.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0263C2F81C986F8F00581D82 /* money */ = {
+		0263C2F81C986F8F00581D82 /* Money */ = {
 			isa = PBXGroup;
 			children = (
 				0263C3101C986FA800581D82 /* Money.swift */,
 				0263C2F91C986F8F00581D82 /* money.h */,
 				0263C2FB1C986F8F00581D82 /* Info.plist */,
 			);
+			name = Money;
 			path = money;
 			sourceTree = "<group>";
 		};
-		0263C3041C986F8F00581D82 /* moneyTests */ = {
+		0263C3041C986F8F00581D82 /* MoneyTests */ = {
 			isa = PBXGroup;
 			children = (
 				0263C3131C98703C00581D82 /* MoneyTests.swift */,
 				0263C3071C986F8F00581D82 /* Info.plist */,
 				0263C3121C98703B00581D82 /* moneyTests-Bridging-Header.h */,
 			);
+			name = MoneyTests;
 			path = moneyTests;
 			sourceTree = "<group>";
 		};
@@ -105,9 +107,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0263C2F51C986F8F00581D82 /* money */ = {
+		0263C2F51C986F8F00581D82 /* Money */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0263C30A1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "money" */;
+			buildConfigurationList = 0263C30A1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "Money" */;
 			buildPhases = (
 				0263C2F11C986F8F00581D82 /* Sources */,
 				0263C2F21C986F8F00581D82 /* Frameworks */,
@@ -118,14 +120,14 @@
 			);
 			dependencies = (
 			);
-			name = money;
+			name = Money;
 			productName = money;
-			productReference = 0263C2F61C986F8F00581D82 /* money.framework */;
+			productReference = 0263C2F61C986F8F00581D82 /* Money.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0263C2FF1C986F8F00581D82 /* moneyTests */ = {
+		0263C2FF1C986F8F00581D82 /* MoneyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0263C30D1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "moneyTests" */;
+			buildConfigurationList = 0263C30D1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "MoneyTests" */;
 			buildPhases = (
 				0263C2FC1C986F8F00581D82 /* Sources */,
 				0263C2FD1C986F8F00581D82 /* Frameworks */,
@@ -136,9 +138,9 @@
 			dependencies = (
 				0263C3031C986F8F00581D82 /* PBXTargetDependency */,
 			);
-			name = moneyTests;
+			name = MoneyTests;
 			productName = moneyTests;
-			productReference = 0263C3001C986F8F00581D82 /* moneyTests.xctest */;
+			productReference = 0263C3001C986F8F00581D82 /* Money.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,8 +174,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0263C2F51C986F8F00581D82 /* money */,
-				0263C2FF1C986F8F00581D82 /* moneyTests */,
+				0263C2F51C986F8F00581D82 /* Money */,
+				0263C2FF1C986F8F00581D82 /* MoneyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,7 +219,7 @@
 /* Begin PBXTargetDependency section */
 		0263C3031C986F8F00581D82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0263C2F51C986F8F00581D82 /* money */;
+			target = 0263C2F51C986F8F00581D82 /* Money */;
 			targetProxy = 0263C3021C986F8F00581D82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -325,8 +327,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.money;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.Money;
+				PRODUCT_NAME = Money;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -345,8 +347,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.money;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.Money;
+				PRODUCT_NAME = Money;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -357,8 +359,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = moneyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.moneyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.MoneyTests;
+				PRODUCT_MODULE_NAME = MoneyTests;
+				PRODUCT_NAME = Money;
 				SWIFT_OBJC_BRIDGING_HEADER = "moneyTests/moneyTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -370,8 +373,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = moneyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.moneyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ontometrics.swift.MoneyTests;
+				PRODUCT_MODULE_NAME = MoneyTests;
+				PRODUCT_NAME = Money;
 				SWIFT_OBJC_BRIDGING_HEADER = "moneyTests/moneyTests-Bridging-Header.h";
 			};
 			name = Release;
@@ -388,21 +392,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0263C30A1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "money" */ = {
+		0263C30A1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "Money" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0263C30B1C986F8F00581D82 /* Debug */,
 				0263C30C1C986F8F00581D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		0263C30D1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "moneyTests" */ = {
+		0263C30D1C986F8F00581D82 /* Build configuration list for PBXNativeTarget "MoneyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0263C30E1C986F8F00581D82 /* Debug */,
 				0263C30F1C986F8F00581D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

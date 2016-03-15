@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:money.xcodeproj">
+      location = "self:/Users/robwilliams/Documents/workspaces/xcode/money-swift/money/Money.xcodeproj">
    </FileRef>
 </Workspace>

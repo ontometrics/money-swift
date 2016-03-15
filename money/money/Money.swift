@@ -50,10 +50,11 @@ protocol Exchangeable {
     var currency:Currency { get }
 }
 
-public struct Money : Exchangeable {
+@objc
+public class Money : NSObject, Exchangeable {
     let amount:Double
     let currency:Currency
-    var description:String {
+    override public var description:String {
         get {
             return currency.symbol + String(format: "%.2f", amount)
         }
